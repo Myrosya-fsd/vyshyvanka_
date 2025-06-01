@@ -2,7 +2,7 @@
   padding-top: 75px;
   padding-bottom: 150px;
   background-size: 215px 300px;
-  background-image: url(../img/element-1x.png);
+  background-image: url(/img/element-1x.png);
   background-repeat: no-repeat;
   background-position: calc(50% - 720px) 306px;
 }
@@ -11,7 +11,7 @@
   (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ration: 2) {
   .collection {
-    background-image: url(../img/element-2x.png);
+    background-image: url(/img/element-2x.png);
   }
 }
 

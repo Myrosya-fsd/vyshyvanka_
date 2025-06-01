@@ -1,10 +1,8 @@
 .footer {
   border-top: 1px solid rgba(252, 249, 249, 0.1);
-  background-image: url(../img/elementss-1x.png);
+  background-image: url(/img/elementss-1x.png);
   background-repeat: no-repeat;
   background-size: 500px 363px;
-  background-position: 200% calc(50% + 20px);
-  background-position: calc(50% - 720px) 306px;
   background-position: calc(50% + 465px) calc(50%);
   padding-top: 40px;
   padding-bottom: 40px;
@@ -14,7 +12,7 @@
   (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ration: 2) {
   .footer {
-    background-image: url(../img/elementss-2x.png);
+    background-image: url(/img/elementss-2x.png);
   }
 }
 
