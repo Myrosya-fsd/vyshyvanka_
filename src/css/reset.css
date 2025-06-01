@@ -36,6 +36,8 @@ img {
 body {
   font-family: Manrope;
   background-color: #1c2225;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
