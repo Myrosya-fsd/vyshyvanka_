@@ -1,0 +1,78 @@
+<section class="order" id="order">
+  <div class="container container-order">
+    <div
+      class="order-photo-block"
+      data-aos="fade-down-right"
+      data-aos-delay="300"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in-out"
+    >
+      <picture class="order-picture">
+        <source
+          srcset="
+            ../img/Rectangle-42481-1x.jpg 1x,
+            ../img/Rectangle-42481-2x.jpg 2x
+          "
+          width="524"
+          height="521"
+        />
+        <img
+          class="order-img"
+          src="../img/Rectangle-42481-1x.jpg"
+          alt="Ukrainian embroidery"
+        />
+      </picture>
+    </div>
+    <div
+      class="order-box"
+      data-aos="fade-left"
+      data-aos-delay="300"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in-out"
+    >
+      <h2 class="order-title">
+        <span> Your order </span> is our priority: Personalized approach and
+        quality of service
+      </h2>
+      <form name="order-form">
+        <label class="form-field">
+          <input
+            type="text"
+            name="user-name"
+            class="form-info"
+            placeholder="Enter your full name"
+            required
+            autocapitalize="words"
+            minlength="2"
+            pattern="^[a-zA-Z0-9]+( [a-zA-Z0-9]+){0,2}$"
+            title="John Fitzgerald Kennedy"
+          />
+        </label>
+        <label class="form-field">
+          <input
+            type="email"
+            name="user-email"
+            class="form-info"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <label class="form-field-com">
+          <textarea
+            name="comments"
+            class="form-info form-comments"
+            placeholder="Comments"
+          ></textarea>
+        </label>
+        <button class="hero-btn" type="submit">
+          Send
+          <svg viewBox="0 0 32 32">
+            <path
+              d="M7.414 27.414l16.586-16.586v7.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-12c0-0.809-0.487-1.538-1.235-1.848-0.248-0.103-0.508-0.151-0.765-0.151v-0.001h-12c-1.105 0-2 0.895-2 2s0.895 2 2 2h7.172l-16.586 16.586c-0.391 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"
+            />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

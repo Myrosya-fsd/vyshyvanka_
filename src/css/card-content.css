@@ -1,0 +1,14 @@
+.card-content {
+  width: 1440px;
+  height: 776px;
+  background-image: url(../img/Image-1x.jpg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-resolution: 2dppx),
+  (min-resolution: 192dpi),
+  (-webkit-min-device-pixel-ration: 2) {
+  .about-us {
+    background-image: url(../img/Image-2x.jpg);
+  }
+}

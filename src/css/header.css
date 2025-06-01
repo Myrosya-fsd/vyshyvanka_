@@ -92,6 +92,7 @@
 .header-address:hover {
   transform: scale(1.05);
 }
+
 .header-address-link:hover {
   transform: scale(1.05);
   color: #ecd979;

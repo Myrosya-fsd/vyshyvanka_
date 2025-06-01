@@ -11,14 +11,16 @@
 
 .hero-img {
   border-radius: 4px;
-  width: 392px;
-  height: 545px;
   margin-right: 40px;
+  overflow: hidden;
+}
+
+.hero-card {
   transition: transform 0.2s ease;
 }
 
-.hero-img:hover,
-.hero-img:focus {
+.hero-card:hover,
+.hero-card:focus {
   transform: scale(1.05);
 }
 
@@ -40,16 +42,6 @@
   margin-bottom: 40px;
 }
 
-.hero-link {
-  display: block;
-  align-items: center;
-  margin-left: 180px;
-}
-
-span {
-  color: #ecd979;
-}
-
 .hero-text {
   font-size: 16px;
   letter-spacing: -0.04em;
@@ -58,6 +50,9 @@ span {
 }
 
 .hero-link {
+  display: block;
+  align-items: center;
+  margin-left: 180px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
   padding: 14px 39px;
