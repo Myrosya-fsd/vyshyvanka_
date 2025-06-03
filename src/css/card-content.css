@@ -1,14 +1,54 @@
 .card-content {
-  width: 1440px;
-  height: 776px;
-  background-image: url(/img/Image-1x.jpg);
+  width: 375px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/Image-1x-mob.jpg);
   background-repeat: no-repeat;
 }
 
 @media screen and (min-resolution: 2dppx),
   (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ration: 2) {
-  .about-us {
-    background-image: url(/img/Image-2x.jpg);
+  .card-content {
+    background-image: url(../img/Image-2x-mob.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-content {
+    width: 768px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/Image-1x-tab.jpg);
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ration: 2) {
+    .card-content {
+      background-image: url(../img/Image-2x-tab.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card-content {
+    width: 1440px;
+    height: 776px;
+    background-image: url(/img/Image-1x.jpg);
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ration: 2) {
+    .card-content {
+      background-image: url(/img/Image-2x.jpg);
+    }
   }
 }

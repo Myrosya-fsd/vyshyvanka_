@@ -1,10 +1,11 @@
 .about-us {
-  padding-top: 75px;
-  padding-bottom: 75px;
-  background-size: 545px 484px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 375px;
+  background-size: 459px 408px;
   background-image: url(/img/elements-1x.png);
   background-repeat: no-repeat;
-  background-position: calc(50% + 445px) calc(50% + 110px);
+  background-position: calc(50% + 257px) calc(50% + 216px);
 }
 
 @media screen and (min-resolution: 2dppx),
@@ -15,34 +16,26 @@
   }
 }
 
-.container-about-us {
-  display: flex;
-}
-
-.about-us-description {
-  display: flex;
-  flex-direction: column;
-  padding: 75px 50px 75px 0;
-}
-
 .about-us-title {
   font-weight: 500;
-  font-size: 44px;
-  line-height: 145%;
+  font-size: 32px;
+  line-height: 137%;
   letter-spacing: -0.03em;
   color: white;
   margin-bottom: 40px;
 }
 
 .about-us-text {
-  width: 481px;
-  font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: -0.04em;
   color: rgba(252, 249, 249, 0.4);
 }
 
 .about-us-text:not(:first-child) {
+  margin-bottom: 50px;
+}
+
+.about-us-text:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -58,4 +51,62 @@
 
 .about-us-img:hover {
   transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 768px;
+    background-size: 545px 484px;
+    background-position: calc(50% + 273px) calc(50% + 246px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-us {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-size: 545px 484px;
+    max-width: 1440px;
+    background-position: calc(50% + 445px) calc(50% + 110px);
+  }
+
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ration: 2) {
+    .about-us {
+      background-image: url(/img/elements-2x.png);
+    }
+  }
+
+  .container-about-us {
+    display: flex;
+  }
+
+  .about-us-description {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 50px 75px 0;
+  }
+
+  .about-us-title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 145%;
+    letter-spacing: -0.03em;
+    color: white;
+    margin-bottom: 40px;
+  }
+
+  .about-us-text {
+    width: 481px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    color: rgba(252, 249, 249, 0.4);
+  }
+
+  .about-us-text:not(:first-child) {
+    margin-bottom: 20px;
+  }
 }

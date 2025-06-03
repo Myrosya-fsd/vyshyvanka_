@@ -1,6 +1,11 @@
 .header {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.header-item,
+.header-address {
+  display: none;
 }
 
 .nav {
@@ -13,21 +18,14 @@
 .nav-logo-icon {
   transition: transform 0.2s ease;
 }
+
 .nav-logo-icon:hover {
   transform: scale(1.05);
 }
 
-.header-item {
-  height: 18px;
-  font-size: 14px;
-  line-height: 129%;
-  text-transform: uppercase;
-}
-
-.header-item,
-.header-address-link,
-.header-soc-icon {
-  color: white;
+.header-soc-list {
+  display: flex;
+  gap: 12px;
 }
 
 .nav-logo {
@@ -36,37 +34,8 @@
   margin-right: 60px;
 }
 
-.header-list {
-  display: flex;
-  gap: 25px;
-  margin-right: 289px;
-}
-
-.header-item {
-  list-style: none;
-  transition: transform 0.2s ease;
-}
-
-.header-item:hover {
-  transform: scale(1.05);
-  color: #ecd979;
-}
-
-.header-soc-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  gap: 12px;
-}
-
-.header-soc-link:hover {
-  transform: scale(1.05);
-  background-color: #ecd979;
-}
-
 .header-soc-link {
-  background-color: white;
+  background: rgba(252, 249, 249, 0.1);
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
   padding: 8px;
@@ -75,25 +44,180 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.header-address {
-  margin-right: 20px;
-  font-size: 14px;
-  line-height: 143%;
-  text-transform: uppercase;
-  font-style: normal;
-}
-
-.header-address {
   transition: transform 0.2s ease;
 }
 
-.header-address:hover {
+.header-soc-icon {
+  fill: currentColor;
+  color: white;
+}
+
+.header-soc-link:hover {
+  border: 1px solid #ecd979;
+  background-color: transparent; /* Прозорий фон */
   transform: scale(1.05);
 }
 
-.header-address-link:hover {
+.icon-paragraph-right {
+  display: block;
+  background-color: transparent; /* Прозорий фон */
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.icon-paragraph-right:hover {
   transform: scale(1.05);
   color: #ecd979;
+}
+
+.nav-logo-icon {
+  transition: transform 0.2s ease;
+  fill: currentColor;
+  color: #ecd979;
+  width: 27px;
+  height: 27px;
+}
+
+.nav-logo-icon:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+/*.soc-icon {
+  fill: currentColor;
+  color: #ecd979;
+}*/
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+
+  .header-list,
+  .header-address {
+    display: none;
+  }
+
+  .nav-logo {
+    margin-right: 440px;
+  }
+
+  .icon-paragraph-right {
+    display: block;
+    background-color: transparent; /* Прозорий фон */
+    border: none;
+    color: white;
+    transition: transform 0.2s ease;
+  }
+
+  .icon-paragraph-right:hover {
+    transform: scale(1.05);
+    color: #ecd979;
+  }
+
+  .nav-logo-icon {
+    transition: transform 0.2s ease;
+    fill: currentColor;
+    color: white;
+  }
+  .nav-logo-icon:hover {
+    transform: scale(1.05);
+    color: #ecd979;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .header-item,
+  .header-address {
+    display: block;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .nav-logo-icon {
+    transition: transform 0.2s ease;
+  }
+  .nav-logo-icon:hover {
+    transform: scale(1.05);
+  }
+
+  .header-item {
+    height: 18px;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+  }
+
+  .header-item,
+  .header-address-link,
+  .header-soc-icon {
+    color: white;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 25px;
+    margin-right: 289px;
+  }
+
+  .header-item {
+    list-style: none;
+    transition: transform 0.2s ease;
+  }
+
+  .header-item:hover {
+    transform: scale(1.05);
+    color: #ecd979;
+  }
+
+  .header-soc-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+
+  .header-address {
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 143%;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+
+  .header-address {
+    transition: transform 0.2s ease;
+  }
+
+  .header-address:hover {
+    transform: scale(1.05);
+  }
+
+  .header-address-link:hover {
+    transform: scale(1.05);
+    color: #ecd979;
+  }
+
+  .icon-paragraph-right {
+    display: none;
+  }
 }

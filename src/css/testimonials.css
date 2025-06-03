@@ -1,12 +1,12 @@
 .revius {
-  padding-top: 75px;
-  padding-bottom: 150px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .revius-title {
   font-weight: 500;
-  font-size: 44px;
-  line-height: 145%;
+  font-size: 32px;
+  line-height: 137%;
   letter-spacing: -0.03em;
   color: white;
   margin-bottom: 64px;
@@ -14,13 +14,15 @@
 
 .revius-list {
   display: flex;
-  gap: 26px;
+  gap: 32px;
 }
 
 .revius-item {
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 4px;
-  padding: 54px 18px 18px 18px;
+  padding: 54px 22px 18px 22px;
+  width: 335px;
+  height: 243px;
   text-align: center;
   position: relative;
 }
@@ -28,7 +30,7 @@
 .revius-item-title {
   font-weight: 600;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 150%;
   text-align: center;
   color: white;
   margin-bottom: 8px;
@@ -42,7 +44,60 @@
 }
 
 .revius-text {
+  font-weight: 400;
+  font-size: 14px;
   text-align: center;
   color: rgba(252, 249, 249, 0.4);
-  line-height: 1.37;
+}
+
+.revius-hide-phone,
+.revius-hide-ipad {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .revius-hide-phone {
+    display: block;
+  }
+
+  .revius-title {
+    font-size: 44px;
+    line-height: 145%;
+    margin-bottom: 64px;
+  }
+
+  .revius-item {
+    padding: 54px 18px 18px 18px;
+    text-align: center;
+    position: relative;
+    width: 336px;
+    height: 268px;
+  }
+
+  .revius-text {
+    text-align: center;
+    color: rgba(252, 249, 249, 0.4);
+    line-height: 1.37;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .revius {
+    padding-top: 75px;
+    padding-bottom: 150px;
+  }
+
+  .revius-list {
+    display: flex;
+    gap: 26px;
+  }
+
+  .revius-item {
+    width: 396px;
+    height: 264px;
+  }
+
+  .revius-hide-ipad {
+    display: block;
+  }
 }

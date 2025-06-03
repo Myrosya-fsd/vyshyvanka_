@@ -1,10 +1,11 @@
 .collection {
-  padding-top: 75px;
-  padding-bottom: 150px;
-  background-size: 215px 300px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 375px;
   background-image: url(/img/element-1x.png);
   background-repeat: no-repeat;
-  background-position: calc(50% - 720px) 306px;
+  background-size: 199px 177px;
+  background-position: calc(50% - 216px) 338px;
 }
 
 @media screen and (min-resolution: 2dppx),
@@ -17,21 +18,17 @@
 
 .collection-title {
   font-weight: 500;
-  font-size: 44px;
-  line-height: 145%;
+  font-size: 32px;
+  line-height: 137%;
   letter-spacing: -0.03em;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 40px;
 }
 
 .collection-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 20px;
-  width: 1240px;
+  gap: 20px;
 }
 
 .collection-card {
@@ -40,13 +37,15 @@
 }
 
 .collection-img {
+  width: 335px;
+  height: 400px;
   width: 100%;
   margin-bottom: 18px;
 }
 
 .collection-subtitle {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 100%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -60,8 +59,62 @@
   line-height: 100%;
   letter-spacing: 0.05em;
   color: rgba(252, 249, 249, 0.4);
+  margin-bottom: 20px;
 }
 
 .collection-subtitle:hover {
   color: #ecd979;
+}
+
+@media screen and (min-width: 768px) {
+  .collection {
+    max-width: 768px;
+    background-size: 338px 300px;
+    background-position: calc(50% - 440px) 271px;
+  }
+
+  .collection-img {
+    width: 342px;
+    height: 100%;
+  }
+
+  .collection-title {
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+  }
+
+  .collection-list {
+    gap: 40px 20px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .collection {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-size: 215px 300px;
+    background-position: calc(50% - 720px) 306px;
+  }
+
+  .collection-title {
+    font-size: 44px;
+    line-height: 145%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 40px;
+  }
+
+  .collection-list {
+    width: 1240px;
+  }
+
+  .collection-img {
+    width: 380px;
+    height: 430px;
+    width: 100%;
+    margin-bottom: 18px;
+  }
 }
