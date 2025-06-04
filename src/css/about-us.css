@@ -62,10 +62,14 @@
     background-position: calc(50% + 273px) calc(50% + 246px);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .about-us {
     padding-top: 75px;
     padding-bottom: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     background-size: 545px 484px;
     max-width: 1440px;
     background-position: calc(50% + 445px) calc(50% + 110px);

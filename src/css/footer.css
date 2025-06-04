@@ -51,6 +51,6 @@
 @media screen and (min-width: 1280px) {
   .footer {
     background-size: 500px 363px;
-    background-position: calc(50% + 465px) calc(50%);
+    background-position: calc(50% + 460px) calc(50%);
   }
 }

@@ -1,7 +1,6 @@
 .collection {
   padding-top: 40px;
   padding-bottom: 40px;
-
   background-image: url(/img/element-1x.png);
   background-repeat: no-repeat;
   background-size: 199px 177px;
@@ -67,7 +66,6 @@
 
 @media screen and (min-width: 768px) {
   .collection {
-    max-width: 768px;
     background-size: 338px 300px;
     background-position: calc(50% - 440px) 271px;
   }
@@ -83,10 +81,14 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .collection {
     padding-top: 75px;
     padding-bottom: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     background-size: 215px 300px;
     background-position: calc(50% - 720px) 306px;
   }
@@ -105,7 +107,7 @@
   }
 
   .collection-img {
-    width: 380px;
+    width: 400px;
     height: 430px;
     margin-bottom: 18px;
   }

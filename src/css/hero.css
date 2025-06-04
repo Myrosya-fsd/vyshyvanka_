@@ -1,14 +1,12 @@
 .hero {
   padding-top: 40px;
   padding-bottom: 40px;
-  margin: 0 auto;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
 }
 
 .hero-img {
@@ -117,6 +115,11 @@
     margin-bottom: 46px;
   }
 
+  .hero-img {
+    width: 392px;
+    height: 545px;
+  }
+
   .hero-dekoretion {
     display: flex;
     flex-direction: column;
@@ -141,14 +144,20 @@
     justify-content: center;
   }
 
+  .hero-card {
+    margin-bottom: 0;
+  }
+
   .hero-img {
     margin-right: 40px;
   }
 
   .hero-title {
-    font-size: 62px;
+    font-size: 64px;
     line-height: 116%;
+
     width: 632px;
+    margin-right: 61px;
     margin-bottom: 40px;
   }
 
