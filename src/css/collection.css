@@ -1,7 +1,7 @@
 .collection {
   padding-top: 40px;
   padding-bottom: 40px;
-  max-width: 375px;
+
   background-image: url(/img/element-1x.png);
   background-repeat: no-repeat;
   background-size: 199px 177px;
@@ -39,7 +39,6 @@
 .collection-img {
   width: 335px;
   height: 400px;
-  width: 100%;
   margin-bottom: 18px;
 }
 
@@ -108,7 +107,6 @@
   .collection-img {
     width: 380px;
     height: 430px;
-    width: 100%;
     margin-bottom: 18px;
   }
 }
