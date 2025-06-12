@@ -71,13 +71,13 @@
   }
 
   .collection-img {
-    width: 342px;
+    width: 340px;
     height: 100%;
   }
 
   .collection-list {
-    gap: 40px 20px;
-    width: 768px;
+    gap: 20px 20px;
+    width: 700px;
   }
 }
 
